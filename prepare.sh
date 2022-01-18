@@ -7,8 +7,8 @@ if [ -z $1 ]; then
     exit 1
 fi;
 
-L4Tv="32.1.0"
-FILE_LIST="cuda-repo-l4t-10-0-local-10.0.166_1.0-1_arm64.deb libcudnn7_7.3.1.28-1+cuda10.0_arm64.deb libcudnn7-dev_7.3.1.28-1+cuda10.0_arm64.deb Jetson-210_Linux_R${L4Tv}_aarch64.tbz2"
+L4Tv="32.5.0"
+FILE_LIST="cuda-repo-l4t-10-2-local-10.2.89_1.0-1_arm64.deb libcudnn8_8.0.0.180-1+cuda10.2_arm64.deb libcudnn8-dev_8.0.0.180-1+cuda10.2_arm64.deb Jetson-210_Linux_R${L4Tv}_aarch64.tbz2"
 DLPATH=$1
 
 if [ ! -f "$DLPATH/Jetson-210_Linux_R${L4Tv}_aarch64.tbz2" ]; then
